@@ -56,7 +56,7 @@ public class CodeGenerator {
 
      // 数据源配置
      DataSourceConfig dsc = new DataSourceConfig();
-     dsc.setUrl("jdbc:mysql://localhost:3306/hui?useUnicode=true&useSSL=false&characterEncoding=utf8&serverTimezone=UTC");
+     dsc.setUrl("jdbc:mysql://localhost:3306/test?useUnicode=true&useSSL=false&characterEncoding=utf8&serverTimezone=UTC");
      // dsc.setSchemaName("public");
      dsc.setDriverName("com.mysql.cj.jdbc.Driver");
      dsc.setUsername("root");
@@ -81,7 +81,7 @@ public class CodeGenerator {
          @Override
          public String outputFile(TableInfo tableInfo) {
              // 自定义输入文件名称
-             return projectPath + "/src/main/resources/mapper/" 
+             return projectPath + "/demo/src/main/resources/mapper/"
                      + "/" + tableInfo.getEntityName() + "Mapper" + StringPool.DOT_XML;
          }
      });
