@@ -1,6 +1,7 @@
 package com.demo.controller;
 
 
+import lombok.extern.java.Log;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import org.springframework.web.bind.annotation.RestController;
@@ -15,6 +16,7 @@ import org.springframework.web.bind.annotation.RestController;
  */
 @RestController
 @RequestMapping("/test")
+@Log
 public class TestController {
 
 }
